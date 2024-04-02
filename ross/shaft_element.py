@@ -780,7 +780,7 @@ class ShaftElement(Element):
         return K
 
     def C(self):
-        """Stiffness matrix for an instance of a shaft element.
+        """Damping matrix for an instance of a shaft element.
 
         Returns
         -------
@@ -1205,11 +1205,11 @@ class ShaftElement6DoF(ShaftElement):
         [u_0, v_0, w_0, \theta_0, \psi_0, \phi_0, u_1, v_1, w_1, \theta_1, \psi_1, \phi_1]^T
     Being the following their ordering for an element:
 
-    :math:`x_0,u_0`  - horizontal translation;
+    :math:`u_0`  - horizontal translation;
 
-    :math:`y_0,v_0`  - vertical translation;
+    :math:`v_0`  - vertical translation;
 
-    :math:`z_0,w_0`  - axial translation;
+    :math:`w_0`  - axial translation;
 
     :math:`\theta_0` - rotation around horizontal, bending on the yz plane;
 
