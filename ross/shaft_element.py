@@ -1557,28 +1557,28 @@ class ShaftElement6DoF(ShaftElement):
 
         Being the following their ordering for a node:
 
-        x_0 - horizontal translation
-        y_0 - vertical translation
-        z_0 - axial translation
+        u_0 - horizontal translation
+        v_0 - vertical translation
+        w_0 - axial translation
         alpha_0 - rotation around horizontal
         beta_0  - rotation around vertical
         theta_0 - torsion around axial
 
         >>> sh = ShaftElement6DoF(L=0.5, idl=0.05, odl=0.1, material=steel,
         ...                       rotary_inertia=True, shear_effects=True)
-        >>> sh.dof_mapping()["x_0"]
+        >>> sh.dof_mapping()["u_0"]
         0
         """
         return dict(
-            x_0=0,
-            y_0=1,
-            z_0=2,
+            u_0=0,
+            v_0=1,
+            w_0=2,
             alpha_0=3,
             beta_0=4,
             theta_0=5,
-            x_1=6,
-            y_1=7,
-            z_1=8,
+            u_1=6,
+            v_1=7,
+            w_1=8,
             alpha_1=9,
             beta_1=10,
             theta_1=11,
